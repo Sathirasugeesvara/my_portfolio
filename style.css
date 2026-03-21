@@ -155,12 +155,13 @@ section{
     box-shadow: 0 0 35px var(--main-color);
 }
 .typing {
-  font-size: 5rem;
+  font-size: clamp(2rem, 6vw, 5rem);
   color: var(--text-color);
   overflow: hidden;
   white-space: nowrap;
   border-right: 3px solid var(--main-color);
   width: 0;
+  max-width: 90vw;
   animation: typing 3s steps(30) forwards, blink 0.7s infinite;
   margin: 2rem auto;
 }
@@ -238,17 +239,19 @@ section{
 }
 .timelinesection h1{
     font-size: 6rem;
+    text-align: center;
 }
 .timelinesection h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 .timelinesection hr {
-    width: 1080px;
+    width: 90%; 
+    max-width: 1080px; 
     height: 3px;
     background: var(--main-color);
     border: none;
-    margin: 1rem auto 2rem;
+    margin: 1rem auto 2rem; 
 }
 .timelinesection p {
     font-size: 1.4rem;
@@ -357,7 +360,8 @@ section{
     font-size: 8rem;
 }
 .skills hr {
-    width: 1080px;
+    width: 90%; 
+    max-width: 1080px; 
     height: 3px;
     background: var(--main-color);
     border: none;
@@ -409,7 +413,8 @@ section{
     border-radius: 1.5rem;
 }
 .projects hr {
-    width: 1080px;
+    width: 90%; 
+    max-width: 1080px; 
     height: 3px;
     background: var(--main-color);
     border: none;
@@ -444,7 +449,8 @@ section{
     resize: none;
 }
 .contact hr {
-    width: 1080px;
+    width: 90%; 
+    max-width: 1080px; 
     height: 3px;
     background: var(--main-color);
     border: none;
@@ -511,56 +517,89 @@ section{
 
 
 /* mobile responsive */
-@media (max-width: 1285px) {
-    #menu-icon {
-        display: block;
+@media (max-width: 768px) {
+    .typing {
+            font-size: 2.5rem; 
+            border-right: 2px solid var(--main-color);
+            animation: typing 2s steps(20) forwards, blink 0.7s infinite;
     }
     .navbar {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 60%;
-        padding: 2rem;
-        background: rgba(0, 0, 0, 0.8);
-        border-bottom-left-radius: 2rem;
-        border-left: 2px solid var(--main-color);
-        border-bottom: 2px solid var(--main-color);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transform: translateX(100%);
-        transition: 0.3s ease-in-out;
+            width: 90%;
     }
-    .navbar a {
-        margin: 2rem 0;
-        font-size: 2rem;
-        color: var(--text-color);
+    .timelinesection hr {
+            width: 95%;
+            height: 2px;  
+            margin: 1rem auto 1.5rem;
+    } 
+    .skills hr {
+            width: 95%;
+            height: 2px;  
+            margin: 1rem auto 1.5rem;
     }
-    .navbar.active {
-        transform: translateX(0);
+    .projects hr {
+            width: 95%;
+            height: 2px;  
+            margin: 1rem auto 1.5rem;
     }
-    .gradient-btn {
-        display: none;
+     .contact hr {
+            width: 95%;
+            height: 2px;  
+            margin: 1rem auto 1.5rem;
     }
-    .home{
-        flex-direction: column-reverse;
-        margin: 5rem 0;
-        gap: 5rem;
-    }
-    .home-content{
-        align-items: center;
-        text-align: center;
-    }
-    .about{
-        display: flex;
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-    .about h2{
-        text-align: center;
-        margin: 2rem 0;
-    }
-    .about h1 {
-        margin: 2rem 0;
-    }
+}
+
+@media (max-width: 1285px) {
+  #menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 80%;   
+    max-width: 300px;  
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom-left-radius: 2rem;
+    border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%); 
+    transition: transform 0.3s ease-in-out;
+  }
+  .navbar.active {
+    transform: translateX(0); 
+  }
+  .navbar a {
+    margin: 1.5rem 0;
+    font-size: clamp(1rem, 4vw, 2rem); 
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  .gradient-btn {
+    display: none;
+  }
+  .home {
+    flex-direction: column-reverse;
+    margin: 3rem 0;
+    gap: 3rem;
+  }
+  .home-content {
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .about h1,
+  .about h2 {
+    margin: 1.5rem 0;
+  }
 }
