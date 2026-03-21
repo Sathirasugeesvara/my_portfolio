@@ -1,24 +1,28 @@
-  const form = document.getElementById('contactForm');
+const menuIcon = document.querySelector("#menu-icon");
+const navbar = document.querySelector(".navbar");
 
-  form.addEventListener('submit', function(event) {
-    event.preventDefault(); 
+menuIcon.onclick = () => {
+    navbar.classList.toggle("active");
 
-    const name = form.name.value;
-
-    const hour = new Date().getHours();
-    let greeting;
-
-    if (hour < 12) {
-      greeting = "🌞 Good Morning";
-    } else if (hour <= 18) {
-      greeting = "🌤️ Good Afternoon";
-    } else if (hour <= 21) {
-      greeting = "🌇 Good Evening";
+    if(menuIcon.classList.contains("bx-menu")){
+        menuIcon.classList.replace("bx-menu", "bx-x");
     } else {
-      greeting = "🌙 Good Night";
+        menuIcon.classList.replace("bx-x", "bx-menu");
     }
+};
 
-    alert(`${greeting}, ${name}! Your message has been sent.`);
+const navLinks = document.querySelectorAll(".navbar a");
 
-    form.reset();
-  });
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        navbar.classList.remove("active");
+        menuIcon.classList.replace("bx-x", "bx-menu");
+    });
+});
+
+document.addEventListener("click", (e) => {
+    if (!menuIcon.contains(e.target) && !navbar.contains(e.target)) {
+        navbar.classList.remove("active");
+        menuIcon.classList.replace("bx-x", "bx-menu");
+    }
+});
