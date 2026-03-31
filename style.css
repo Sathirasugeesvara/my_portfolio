@@ -139,6 +139,7 @@ section{
     color: transparent;
 }
 
+
 .profile-img {
     width: 250px;
     height: 250px;
@@ -207,20 +208,16 @@ section{
     background-color: var(--main-color);
     color: black;
 }
-
-
 @keyframes fadeDown {
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-
 @keyframes typing {
     from { width: 0 }
     to { width: 100% }
 }
-
 @keyframes blink {
     50% { border-color: transparent }
 }
@@ -374,19 +371,17 @@ section{
 .projects{
     background-color: var(--second-bg-color);
 }
-.project-box{
+.project-box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
-    row-gap: 5rem;
+    align-items: stretch; 
 }
 .project-card{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--bg-color);
-    justify-content: center;
     text-align: center;
     border-radius: 3rem;
     gap: 2rem;
@@ -395,6 +390,13 @@ section{
     cursor: pointer;
     box-shadow: 0 0 5px var(--main-color);
     transition: 0.3s ease-in-out;
+    height: 100%;
+    justify-content: space-between;  
+    width: 100%;
+}
+
+.project-card a {
+    margin-top: auto;
 }
 .project-card:hover{
     transform: scale(1.02);
@@ -403,14 +405,14 @@ section{
 .project-card h3{
     font-size: 3rem;
 }
-.project-card p{
-    font-size: 1.6rem;
+.project-card p {
+    font-size: 1.4rem;
+    overflow: hidden;
 }
-.project-card img{
-    width: 50%;
-    height: 300px;  
-    object-fit: cover; 
-    border-radius: 1.5rem;
+.project-card img {
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
 }
 .projects hr {
     width: 90%; 
