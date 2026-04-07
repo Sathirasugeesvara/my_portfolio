@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 
 
@@ -21,10 +22,13 @@
             <a href="#timeline">Timeline</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
             <a href="#contact">Contact</a>
         </nav>
         <a href="sathira_cv.pdf" download class="gradient-btn">Download CV</a>
     </header>
+
+
 
 
     
@@ -38,10 +42,15 @@
       </p>   <br><br>  <br>
     
 
-      <div class="btn-group">
-        <a href="sathira_cv.pdf" download class="btn">Download CV</a>
-        <a href="#contact" class="btn">Contact Me</a>
-      </div>
+    <div class="btn-group">
+      <a href="sathira_cv.pdf" download class="btn">
+        <i class='bx bx-download bx-md'></i> Download CV
+      </a>
+
+      <a href="#contact" class="btn">
+        <i class='bx bx-user bx-md'></i> Contact Me
+      </a>
+    </div>
     </div>
     
     <div class="home-img">
@@ -54,6 +63,8 @@
 
 
 
+
+
 <!-- Timeline Section -->
     <section id="timeline" class="timelinesection">
     <h1>Timeline</h1>
@@ -63,7 +74,7 @@
 
       <div class="timeline-item">
         <h2>2025 - Joined University <span class="badge edu-badge">EDU</span></h2>
-        <p><b>Computer Science</b> at <b>University of Sri Jayewardhenepura</b>.</p>
+        <p><b>Computer Science</b> & <b>Mathematics</b> at <b>University of Sri Jayewardhenepura</b>.</p>
       </div>
 
       <div class="timeline-item">
@@ -88,6 +99,8 @@
 
 
 
+
+
 <!-- Skills Section -->
     <section id="skills" class="skills">
       <h2 class="heading">Skills</h2>
@@ -97,33 +110,50 @@
 
         <div class="skill-box">
           <div class="skill-info">
-            <i class='bx bxl-python'></i>
             <h4>Coding</h4>
             <p>Strong foundation in C and Python for problem-solving and building practical applications.</p>
+            <div class="icons">
+              <i class="devicon-c-plain colored"></i>
+              <i class="devicon-python-plain colored"></i>
             </div>
-        </div>
-
-        <div class="skill-box">
-          <div class="skill-info">
-            <i class='bx bxl-html5'></i>
-            <h4>Fullstack Development</h4>
-            <p>Experienced in HTML, CSS, JavaScript, PHP, and SQL for building responsive web applications, handling backend logic, and managing databases with full CRUD operations.</p>
           </div>
         </div>
 
         <div class="skill-box">
-  <div class="skill-info">
-    <i class='bx bx-edit'></i>
-    <h4>Post Editing</h4>
-    <p>Proficient in Canva for designing and editing posts, graphics, and visuals to create engaging, polished content with style and consistency.</p>
-  </div>
-</div>
+          <div class="skill-info">
+            <h4>Fullstack Development</h4>
+            <div class="icons">
+            <i class="devicon-html5-plain colored"></i>
+            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-php-plain colored"></i>
+            <i class="devicon-mysql-plain colored"></i>
+            <i class="devicon-react-original colored"></i>
+            <i class="devicon-nodejs-plain colored"></i>
+            <i class="devicon-mongodb-plain colored"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <div class="skill-info">
+          <h4>Mathematics</h4>
+          <p>Strong foundation in Algebra, Calculus, Statistics, and Geometry for problem-solving and logical thinking.</p>
+          <div class="icons">
+            <i class='bx bx-calculator colored math-icon'></i>
+            <i class='bx bx-brain colored math-icon'></i>
+            <i class='bx bx-bar-chart-alt-2 colored math-icon'></i>
+            <i class='bx bx-square rounded colored math-icon'></i>
+          </div>
+          </div>
+        </div>
 
       </div>
-
     </section>
 
     
+
+
 
 <!-- Projects Section -->
     <section id="projects" class="projects">
@@ -131,29 +161,157 @@
       <hr><br><br>
       <div class="project-box">
 
-        <div class="project-card">
-          <img src="images/Project1.png" alt="Project 1">
-          <h3>Hotel Management System</h3>
-          <p>Full-stack Hotel Management System with Admin, Super Admin, Staff, and Customer modules featuring complete CRUD operations and role-based access using HTML, CSS, JavaScript, PHP, and MySQL.</p>
-            <a href="https://github.com/Sathirasugeesvara/hotel-management-system.git" target="_blank" class="btn">Review Project</a>
+      <div id="projectModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img id="modal-img" src="" alt="Project Image">
+          <h3 id="modal-title">Project Title</h3>
+          <p id="modal-desc">Project description goes here...</p>
+          <a id="modal-link" href="#" target="_blank" class="btn">View on GitHub</a>
         </div>
+      </div>        
 
-        <div class="project-card">
-          <img src="images/Project2.png" alt="Project 2">
-          <h3>Logistics Management System</h3>
-          <p>Developed a menu-driven Logistics Management System in C with file handling, route management, vehicle tracking, delivery request processing, cost estimation, and performance reporting.</p>
-            <a href="https://github.com/Sathirasugeesvara/Logistic-Management-System-.git" target="_blank" class="btn">Review Project</a>
-        </div>
 
-        <div class="project-card">
-          <img src="images/Project3.png" alt="Sarasavi Library Project">
-          <h3>Sarasavi Library Management System</h3>
-           <p>Collaboratively built full-stack Sarasavi Library Management System with Admin & Super Admin dashboards, CRUD functionality, and role-based access using HTML, CSS, JavaScript, PHP, and MySQL.</p>
-            <a href="https://github.com/Kusalranasinghe/Sarasavi-Library.git" target="_blank" class="btn">Review Project</a>
-        </div>
+      <div class="project-card" 
+        data-title="Hotel Management System"
+        data-desc="Full-stack Hotel Management System with Admin, Super Admin, Staff, and Customer modules featuring complete CRUD operations."
+        data-img="images/Project1.png"
+        data-link="https://github.com/Sathirasugeesvara/hotel-management-system.git">
+        <img src="images/Project1.png" alt="Project 1">
+        <h3>Hotel Management System</h3>
+        <p>Full-stack Hotel Management System...</p>
+        <a href="#" class="btn modal-btn">View Details</a>
+      </div>
+
+      
+      <div class="project-card" 
+        data-title="Logistics Management System"
+        data-desc="Developed a menu-driven Logistics Management System in C with file handling, route management, vehicle tracking, delivery request processing, cost estimation, and performance reporting."
+        data-img="images/Project2.png"
+        data-link="https://github.com/Sathirasugeesvara/Logistic-Management-System-.git">
+        <img src="images/Project2.png" alt="Project 2">
+        <h3>Logistics Management System</h3>
+        <p>Developed a menu-driven Logistics Management System...</p>
+        <a href="#" class="btn modal-btn">View Details</a>
+      </div>
+
+
+      <div class="project-card" 
+        data-title="Sarasavi Library Management System"
+        data-desc="Collaboratively built full-stack Sarasavi Library Management System with Admin & Super Admin dashboards, CRUD functionality, and role-based access using HTML, CSS, JavaScript, PHP, and MySQL."
+        data-img="images/Project3.png"
+        data-link="https://github.com/Kusalranasinghe/Sarasavi-Library.git">
+        <img src="images/Project3.png" alt="Sarasavi Library Project">
+        <h3>Sarasavi Library Management System</h3>
+        <p>Collaboratively built full-stack Sarasavi Library Management System...</p>
+        <a href="#" class="btn modal-btn">View Details</a>
+      </div>
 
       </div>
     </section>
+
+
+
+
+
+<!-- for new section -->
+
+
+
+
+
+<!-- Certificates Section -->
+<section id="certificates" class="certificates">
+  <h2 class="heading">Certificates</h2>
+  <hr><br><br>
+
+  <div class="cert-container">
+
+    <div class="cert-card">
+      <img src="images/crtifsliit1.png" alt="AI/ML Certificate">
+      <h3>AI/ML Engineer - Stage 1</h3>
+      <p>Issued by SLIIT - Code Program</p>
+      <a href="https://code.sliit.org/certificates/uvzargma0k" target="_blank" class="btn">
+        <i class='bx bx-link-external'></i> View Certificate
+      </a>
+    </div>
+
+    <div class="cert-card">
+      <img src="images/crtifsliit2.png" alt="AI/ML Certificate">
+      <h3>AI/ML Engineer - Stage 2</h3>
+      <p>Issued by SLIIT - Code Program</p>
+      <a href="https://code.sliit.org/certificates/ivu7usslmn" target="_blank" class="btn">
+        <i class='bx bx-link-external'></i> View Certificate
+      </a>
+    </div>
+
+    <div class="cert-card">
+      <img src="images/Python for BeginnersUOM.png" alt=" Python Certificate">
+      <h3>Python for Beginners</h3>
+      <p>Issued by CODL, University of Moratuwa</p>
+      <a href="https://open.uom.lk/verify?code=83BkijvaZg" target="_blank" class="btn">
+        <i class='bx bx-link-external'></i> View Certificate
+      </a>
+    </div>
+
+    <div class="cert-card">
+      <img src="images/Web Design for BeginnersUOM.png" alt="Web Design for Beginners Certificate">
+      <h3>Web Design for Beginners</h3>
+      <p>Issued by CODL, University of Moratuwa</p>
+      <a href="https://open.uom.lk/verify?code=vzM60TGgVk" target="_blank" class="btn">
+        <i class='bx bx-link-external'></i> View Certificate
+      </a>
+    </div>
+
+    <div class="cert-card">
+  <img src="images/Agile Project Management in ICT Projects.png" alt="Agile Project Management Certificate">
+  <h3>Agile Project Management in ICT Projects</h3>
+  <p>Issued by CODL, University of Moratuwa</p>
+  <a href="https://open.uom.lk/verify?code=fgG1IgFXDs" target="_blank" class="btn">
+    <i class='bx bx-link-external'></i> View Certificate
+  </a>
+</div>
+
+<div class="cert-card">
+  <img src="images/cert-foundations.png" alt="Foundations of Project Management Certificate">
+  <h3>Foundations of Project Management</h3>
+  <p>Issued by CODL, University of Moratuwa</p>
+  <a href="https://open.uom.lk/verify?code=QaLzvkFNM5" target="_blank" class="btn">
+    <i class='bx bx-link-external'></i> View Certificate
+  </a>
+</div>
+
+<div class="cert-card">
+  <img src="images/cert-sqa.png" alt="Introduction to Software Quality Assurance Certificate">
+  <h3>Introduction to Software Quality Assurance</h3>
+  <p>Issued by CODL, University of Moratuwa</p>
+  <a href="https://open.uom.lk/verify?code=bEnHk4Hq6H" target="_blank" class="btn">
+    <i class='bx bx-link-external'></i> View Certificate
+  </a>
+</div>
+
+<div class="cert-card">
+  <img src="images/cert-pcsm.png" alt="Project Communication and Stakeholder Management Certificate">
+  <h3>Project Communication and Stakeholder Management</h3>
+  <p>Issued by CODL, University of Moratuwa</p>
+  <a href="https://open.uom.lk/verify?code=dNG7slTaby" target="_blank" class="btn">
+    <i class='bx bx-link-external'></i> View Certificate
+  </a>
+</div>
+
+<div class="cert-card">
+  <img src="images/cert-pssm.png" alt="Project Scope and Schedule Management Certificate">
+  <h3>Project Scope and Schedule Management</h3>
+  <p>Issued by CODL, University of Moratuwa</p>
+  <a href="https://open.uom.lk/verify?code=De7fDNFrOG" target="_blank" class="btn">
+    <i class='bx bx-link-external'></i> View Certificate
+  </a>
+</div>
+
+  </div>
+</section>
+
+
 
 
 
@@ -178,6 +336,8 @@
     </section>
 
 
+
+    
 
 <!-- Footer -->
     <footer class="footer">
