@@ -23,7 +23,7 @@
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#certificates">Certificates</a>
-            <a href="#contact">Contact</a>
+            <a href="#footer">Contact</a>
         </nav>
         <a href="sathira_cv.pdf" download class="gradient-btn">Download CV</a>
     </header>
@@ -174,36 +174,107 @@
 
       <div class="project-card" 
         data-title="Hotel Management System"
-        data-desc="Full-stack Hotel Management System with Admin, Super Admin, Staff, and Customer modules featuring complete CRUD operations."
+        data-desc="This project is a complete full-stack web application designed to manage all aspects of hotel operations efficiently. Developed using HTML, CSS, JavaScript, PHP, and MySQL, the system demonstrates real-world software development skills, including responsive UI/UX design, secure authentication, database management, and role-based access control.
+
+The platform supports multiple user roles—Admin, Staff, and Customer—each with tailored functionality. Customers can register, log in, browse the home page, view a gallery of hotel images, make room bookings, and access privacy and terms information. Staff members have secure login access to manage assigned rooms, handle bookings, and view relevant customer details according to their role, including reception, housekeeping, and management responsibilities. The Admin panel provides full control over the system, allowing administrators to manage rooms (add, update, delete), view and manage bookings, oversee customer records, and maintain staff data efficiently.
+
+The system integrates modern frontend and backend technologies, featuring semantic HTML, clean CSS with animations, interactive JavaScript functionality, and robust PHP backend logic for authentication and session management. The MySQL database ensures structured storage of all records, including admins, customers, rooms, bookings, and staff, supporting data integrity and efficient query handling.
+
+Key Features:
+Responsive and modern UI/UX design for all user roles.
+Secure registration and login with password hashing and SQL injection prevention.
+Complete room management and booking system.
+Staff management with role-based access, enabling efficient operational workflows.
+Detailed customer and booking records for both staff and admin use.
+Privacy, terms, and contact functionality for user trust and communication.
+Modular code structure for maintainability and scalability.
+
+Future Enhancements:
+Integration of online payment systems.
+Email notifications for bookings and updates.
+Advanced staff roles and shift management.
+Customer reviews, ratings, and analytics dashboards for reporting.
+
+This project demonstrates practical full-stack development skills, bridging frontend, backend, and database design in a single integrated application suitable for learning and real-world application."
         data-img="images/Project1.png"
         data-link="https://github.com/Sathirasugeesvara/hotel-management-system.git">
         <img src="images/Project1.png" alt="Project 1">
         <h3>Hotel Management System</h3>
-        <p>Full-stack Hotel Management System...</p>
+        <p>Full-stack Hotel Management System using HTML, CSS, JavaScript, PHP, and MySQL...</p>
         <a href="#" class="btn modal-btn">View Details</a>
       </div>
 
       
       <div class="project-card" 
         data-title="Logistics Management System"
-        data-desc="Developed a menu-driven Logistics Management System in C with file handling, route management, vehicle tracking, delivery request processing, cost estimation, and performance reporting."
+        data-desc="This project is a comprehensive menu-driven logistics management system developed in C language, designed to simulate real-world delivery and transportation operations. It allows users to manage multiple cities, intercity routes, vehicle types, and delivery requests while calculating costs, fuel consumption, delivery times, and profits. The system incorporates advanced features such as least-cost route calculation, performance reporting, and file handling for data persistence.
+
+The system supports up to 30 cities, with functionality to add, rename, or remove cities. Intercity distances are stored in a 2D array, with automatic symmetry and prevention of invalid entries (distance from a city to itself is always zero). Users can input or edit distances and view a formatted distance table.
+
+Three types of vehicles—Van, Truck, and Lorry—are included, each with distinct capacities, rates per kilometer, average speeds, and fuel efficiency. Delivery requests include source, destination, weight, and vehicle type, with validation to ensure that weights do not exceed vehicle capacity and that source and destination are not identical.
+
+The system calculates delivery costs, time, and fuel usage based on real-world formulas:
+
+DeliveryCost = Distance × Rate × (1 + Weight / 10000)
+Time = Distance / Speed
+FuelUsed = Distance / Efficiency
+FuelCost = FuelUsed × Fuel Price
+TotalCost = DeliveryCost + FuelCost
+Profit = 25% of DeliveryCost
+CustomerCharge = TotalCost + Profit
+
+It maintains up to 50 delivery records and implements a least-cost route algorithm, generating all possible routes between cities (up to 4 cities per route) and selecting the route with minimum distance for cost calculations. The system also provides detailed performance reports, including total deliveries completed, total distance covered, average delivery time, total revenue and profit, and the longest and shortest routes completed.
+
+For enhanced functionality, file handling allows the system to save and load city lists, distance matrices, and delivery records using text files. Data is loaded automatically on startup and saved before exiting, ensuring continuity between sessions.
+
+This project demonstrates practical full-stack C programming skills, including the use of arrays, functions, loops, conditional statements, file handling, and algorithm design. It simulates realistic logistics and delivery operations, providing a hands-on learning experience for understanding transportation systems, cost optimization, and performance tracking.
+
+Technologies & Tools: C Language (Code::Blocks), Git & GitHub, Text Files for persistent data storage."
         data-img="images/Project2.png"
         data-link="https://github.com/Sathirasugeesvara/Logistic-Management-System-.git">
         <img src="images/Project2.png" alt="Project 2">
         <h3>Logistics Management System</h3>
-        <p>Developed a menu-driven Logistics Management System...</p>
+        <p>Developed a menu-driven Logistics Management System using C language...</p>
         <a href="#" class="btn modal-btn">View Details</a>
       </div>
 
 
       <div class="project-card" 
         data-title="Sarasavi Library Management System"
-        data-desc="Collaboratively built full-stack Sarasavi Library Management System with Admin & Super Admin dashboards, CRUD functionality, and role-based access using HTML, CSS, JavaScript, PHP, and MySQL."
+        data-desc="This project is a full-featured, web-based Library Management System developed using HTML, CSS, JavaScript, PHP, and MySQL. It is designed to manage all core library operations efficiently for small to medium-sized libraries, providing role-based access for Super Admin, Admin, and User roles. The system allows administrators to manage books, users, and borrowing requests while maintaining clear operational control and accountability.
+
+Key Features:
+
+Role-Based Access Control:
+Super Admin can manage Admin accounts, approve/reject Admin registration requests, and has full access to all users and books.
+Admin can approve/reject User registration requests, manage books (Add, Edit, Delete, View), and handle borrow requests.
+User can register, request books, and view their own borrowing history.
+Book Management:
+Admins and Super Admins can add, edit, delete, and view books in the system.
+Ensures all book records are organized and easily accessible.
+Borrowing Requests and History:
+Tracks all borrow requests and maintains user borrowing history.
+Approvals and rejections are logged by Admin or Super Admin, keeping the system secure and well-managed.
+User and Admin Registration:
+Users and Admins register through the system and await approval.
+Super Admin is the only role that can create new Admins.
+Technologies & Architecture:
+Frontend: HTML5, CSS3, JavaScript for UI and interactive elements.
+Backend: PHP 8.x for authentication, session management, and database operations.
+Database: MySQL / MariaDB to store all records of users, admins, books, and borrowing history.
+Server: XAMPP / Localhost for local deployment and testing.
+Future Improvements:
+Implement password hashing for enhanced security.
+Add search and filter functionality for books.
+Enhance UI using frameworks like Bootstrap or TailwindCSS.
+Integrate email notifications for approvals, rejections, and borrow requests.
+
+This project demonstrates practical full-stack web development skills, combining frontend design, backend logic, database management, and role-based access control in a single integrated application. It is ideal for learning and real-world library operations management."
         data-img="images/Project3.png"
         data-link="https://github.com/Kusalranasinghe/Sarasavi-Library.git">
         <img src="images/Project3.png" alt="Sarasavi Library Project">
         <h3>Sarasavi Library Management System</h3>
-        <p>Collaboratively built full-stack Sarasavi Library Management System...</p>
+        <p>Collaboratively built full-stack Sarasavi Library Management System using HTML, CSS, JavaScript, PHP, and MySQL...</p>
         <a href="#" class="btn modal-btn">View Details</a>
       </div>
 
@@ -226,9 +297,18 @@
   <hr><br><br>
 
   <div class="cert-container">
+    
+    <div class="cert-card">
+      <img src="images/certificates/Responsive Web Design Certification.png" alt="Responsive Web Design Certification">
+      <h3>Responsive Web Design Certification</h3>
+      <p>Issued by freeCodeCamp</p>
+      <a href="https://freecodecamp.org/certification/sathira_sugeesvara/responsive-web-design-v9" target="_blank" class="btn">
+        <i class='bx bx-link-external'></i> View Certificate
+      </a>
+    </div>
 
     <div class="cert-card">
-      <img src="images/crtifsliit1.png" alt="AI/ML Certificate">
+      <img src="images/certificates/crtifsliit1.png" alt="AI/ML Certificate">
       <h3>AI/ML Engineer - Stage 1</h3>
       <p>Issued by SLIIT - Code Program</p>
       <a href="https://code.sliit.org/certificates/uvzargma0k" target="_blank" class="btn">
@@ -237,78 +317,24 @@
     </div>
 
     <div class="cert-card">
-      <img src="images/crtifsliit2.png" alt="AI/ML Certificate">
-      <h3>AI/ML Engineer - Stage 2</h3>
-      <p>Issued by SLIIT - Code Program</p>
-      <a href="https://code.sliit.org/certificates/ivu7usslmn" target="_blank" class="btn">
-        <i class='bx bx-link-external'></i> View Certificate
-      </a>
-    </div>
-
-    <div class="cert-card">
-      <img src="images/Python for BeginnersUOM.png" alt=" Python Certificate">
+      <img src="images/certificates/Python for BeginnersUOM.png" alt=" Python Certificate">
       <h3>Python for Beginners</h3>
       <p>Issued by CODL, University of Moratuwa</p>
       <a href="https://open.uom.lk/verify?code=83BkijvaZg" target="_blank" class="btn">
-        <i class='bx bx-link-external'></i> View Certificate
+        <i class='bx bx-link-external'></i> Verify Certificate
       </a>
     </div>
-
-    <div class="cert-card">
-      <img src="images/Web Design for BeginnersUOM.png" alt="Web Design for Beginners Certificate">
-      <h3>Web Design for Beginners</h3>
-      <p>Issued by CODL, University of Moratuwa</p>
-      <a href="https://open.uom.lk/verify?code=vzM60TGgVk" target="_blank" class="btn">
-        <i class='bx bx-link-external'></i> View Certificate
-      </a>
-    </div>
-
-    <div class="cert-card">
-  <img src="images/Agile Project Management in ICT Projects.png" alt="Agile Project Management Certificate">
-  <h3>Agile Project Management in ICT Projects</h3>
-  <p>Issued by CODL, University of Moratuwa</p>
-  <a href="https://open.uom.lk/verify?code=fgG1IgFXDs" target="_blank" class="btn">
-    <i class='bx bx-link-external'></i> View Certificate
-  </a>
-</div>
-
-<div class="cert-card">
-  <img src="images/cert-foundations.png" alt="Foundations of Project Management Certificate">
-  <h3>Foundations of Project Management</h3>
-  <p>Issued by CODL, University of Moratuwa</p>
-  <a href="https://open.uom.lk/verify?code=QaLzvkFNM5" target="_blank" class="btn">
-    <i class='bx bx-link-external'></i> View Certificate
-  </a>
-</div>
-
-<div class="cert-card">
-  <img src="images/cert-sqa.png" alt="Introduction to Software Quality Assurance Certificate">
-  <h3>Introduction to Software Quality Assurance</h3>
-  <p>Issued by CODL, University of Moratuwa</p>
-  <a href="https://open.uom.lk/verify?code=bEnHk4Hq6H" target="_blank" class="btn">
-    <i class='bx bx-link-external'></i> View Certificate
-  </a>
-</div>
-
-<div class="cert-card">
-  <img src="images/cert-pcsm.png" alt="Project Communication and Stakeholder Management Certificate">
-  <h3>Project Communication and Stakeholder Management</h3>
-  <p>Issued by CODL, University of Moratuwa</p>
-  <a href="https://open.uom.lk/verify?code=dNG7slTaby" target="_blank" class="btn">
-    <i class='bx bx-link-external'></i> View Certificate
-  </a>
-</div>
-
-<div class="cert-card">
-  <img src="images/cert-pssm.png" alt="Project Scope and Schedule Management Certificate">
-  <h3>Project Scope and Schedule Management</h3>
-  <p>Issued by CODL, University of Moratuwa</p>
-  <a href="https://open.uom.lk/verify?code=De7fDNFrOG" target="_blank" class="btn">
-    <i class='bx bx-link-external'></i> View Certificate
-  </a>
-</div>
 
   </div>
+  
+<br><br>
+
+    <div class="view-more">
+      <a href="certificates.html" class="btn">
+      <i class='bx bx-link-external'></i> View More
+      </a>
+    </div>
+
 </section>
 
 
@@ -340,7 +366,7 @@
     
 
 <!-- Footer -->
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="social-icons">
         <a href="https://github.com/Sathirasugeesvara">
           <i class='bx bxl-github'></i>
@@ -367,7 +393,7 @@
         <li><a href="#contact">FAQ</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#footer">Contact</a></li>
       </ul>
 
       <p class="copyright">

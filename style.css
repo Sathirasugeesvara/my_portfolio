@@ -591,7 +591,23 @@ section{
     border: none;
     margin: 1rem auto 2rem;
 }
-
+.cert-card .btn {
+    background: transparent;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    padding: 0.5rem 1.2rem;
+    font-size: 1.2rem;
+}
+.cert-card .btn:hover {
+    background: var(--main-color);
+    color: black;
+}
+.view-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
 
 
 
