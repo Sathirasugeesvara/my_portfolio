@@ -385,63 +385,7 @@ section{
 .icons{
     max-width: 300px;
 }
-/* MODAL */
-.modal {
-    display: none; 
-    position: fixed;
-    z-index: 2000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.8);
-}
-.modal-content {
-    background-color: var(--bg-color);
-    margin: 10% auto;
-    padding: 3rem;
-    border-radius: 2rem;
-    width: 80%;
-    max-width: 800px;
-    text-align: center;
-    box-shadow: 0 0 25px var(--main-color);
-    position: relative;
-    animation: fadeIn 0.5s ease;
-}
-.modal-content img {
-    width: 80%;
-    max-height: 300px;
-    object-fit: cover;
-    margin-bottom: 2rem;
-    border-radius: 1rem;
-}
-.modal-content h3 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-.modal-content p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    color: #ccc;
-}
-.modal-content .btn {
-    font-size: 1.6rem;
-    padding: 1rem 2rem;
-}
-.close {
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
-    color: var(--main-color);
-    font-size: 4rem;
-    font-weight: bold;
-    cursor: pointer;
-}
-@keyframes fadeIn {
-    from {opacity: 0; transform: scale(0.9);}
-    to {opacity: 1; transform: scale(1);}
-}
+
 
 
 
@@ -489,8 +433,9 @@ section{
 }
 .project-card img {
     width: 100%;
-    height: 40%;
-    object-fit: cover;
+    height: 200px;
+    object-fit: contain;
+    background: #000; /* optional */
 }
 .projects hr {
     width: 90%; 
@@ -499,6 +444,22 @@ section{
     background: var(--main-color);
     border: none;
     margin: 1rem auto 2rem;
+}
+.project-card .btn-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.project-card .btn:first-child {
+    background-color: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+.project-card .btn:first-child:hover {
+    background-color: var(--main-color);
+    color: black;
 }
 
 /* contact Section */
@@ -687,13 +648,9 @@ section{
         gap: 2rem;
         padding: 0 1rem;
     }
-    .project-card {
+    .project-card img {
         width: 100%;
-        padding: 2rem 1rem;
-        img {
-            width: 80%;
-            height: auto;
-        }
+        height: auto;
     }
     .skills-container {
         display: flex;
@@ -796,17 +753,3 @@ section{
         left: -20px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

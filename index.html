@@ -111,10 +111,10 @@
         <div class="skill-box">
           <div class="skill-info">
             <h4>Coding</h4>
-            <p>Strong foundation in C and Python for problem-solving and building practical applications.</p>
             <div class="icons">
               <i class="devicon-c-plain colored"></i>
               <i class="devicon-python-plain colored"></i>
+              <i class="devicon-java-plain colored"></i>
             </div>
           </div>
         </div>
@@ -123,14 +123,18 @@
           <div class="skill-info">
             <h4>Fullstack Development</h4>
             <div class="icons">
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-            <i class="devicon-php-plain colored"></i>
-            <i class="devicon-mysql-plain colored"></i>
-            <i class="devicon-react-original colored"></i>
-            <i class="devicon-nodejs-plain colored"></i>
-            <i class="devicon-mongodb-plain colored"></i>
+                <i class="devicon-html5-plain colored"></i>
+                <i class="devicon-css3-plain colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-php-plain colored"></i>
+                <i class="devicon-mysql-plain colored"></i>
+                <i class="devicon-vitejs-plain colored"></i>
+                <i class="devicon-typescript-plain colored"></i>
+                <i class="devicon-tailwindcss-plain colored"></i>
+                <i class="devicon-mongodb-plain colored"></i>
+                <i class="devicon-express-original colored"></i>
+                <i class="devicon-react-original colored"></i>
+                <i class="devicon-nodejs-plain colored"></i>
             </div>
           </div>
         </div>
@@ -161,125 +165,42 @@
       <hr><br><br>
       <div class="project-box">
 
-      <div id="projectModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <img id="modal-img" src="" alt="Project Image">
-          <h3 id="modal-title">Project Title</h3>
-          <p id="modal-desc">Project description goes here...</p>
-          <a id="modal-link" href="#" target="_blank" class="btn">View on GitHub</a>
-        </div>
-      </div>        
-
-
-      <div class="project-card" 
-        data-title="Xaro Clothing Website"
-        data-desc="This project is a modern full-stack e-commerce clothing website designed to deliver a smooth and responsive online shopping experience. Built using the MERN stack (MongoDB, Express.js, React.js, Node.js), the platform demonstrates real-world web development skills including responsive UI/UX design, authentication, product management, and shopping cart functionality.
-
-The system allows users to browse fashion collections, view product details, add items to cart, and place orders securely. Customers can register and log in to manage their profiles and track orders. Admin users have a dedicated dashboard to manage products, categories, stock, and orders efficiently.
-
-The frontend is built with React.js for a fast and interactive user experience, while Node.js and Express.js handle backend APIs and business logic. MongoDB is used for scalable and flexible data storage, including users, products, and orders.
-
-Key Features:
-Responsive modern UI/UX for clothing shopping
-User authentication and profile management
-Product browsing with categories and filters
-Shopping cart and checkout system
-Admin dashboard for product and order management
-Secure REST API integration with MongoDB database
-
-Future Enhancements:
-Online payment gateway integration
-AI-based product recommendations
-Wishlist and review system
-Order tracking and email notifications
-
-This project showcases full-stack MERN development skills with a focus on modern e-commerce functionality and clean user experience."
-        data-img="images/Project1.png"
-        data-link="https://github.com/Sathirasugeesvara/xaro-clothing.git">
-        
-        <img src="images/Project1.png" alt="Clothing Shop Project">
-        <h3>Xaro Clothing Store</h3>
-        <p>MERN full-stack clothing website with cart, auth, and admin dashboard...</p>
-        <a href="#" class="btn modal-btn">View Details</a>
-</div>
+      <!-- Project 1 -->
+    <div class="project-card">
+      <img src="images/Project1.png" alt="Clothing Shop Project">
+      <h3>Xaro Clothing Store</h3>
+      <p>A modern clothing e-commerce web app built with React, using Google Sheets as a real-time data source via APIs. Enables dynamic product and stock updates instantly without a traditional backend.</p>
+      
+      <div class="btn-group">
+      <a href="https://sathirasugeesvara.github.io/xaro-clothing/" target="_blank" class="btn">Live Demo</a>
+      <a href="https://github.com/Sathirasugeesvara/xaro-clothing.git" target="_blank" class="btn">GitHub</a>
+      </div>
+  
+    </div>
 
       
-      <div class="project-card" 
-        data-title="Logistics Management System"
-        data-desc="This project is a comprehensive menu-driven logistics management system developed in C language, designed to simulate real-world delivery and transportation operations. It allows users to manage multiple cities, intercity routes, vehicle types, and delivery requests while calculating costs, fuel consumption, delivery times, and profits. The system incorporates advanced features such as least-cost route calculation, performance reporting, and file handling for data persistence.
-
-The system supports up to 30 cities, with functionality to add, rename, or remove cities. Intercity distances are stored in a 2D array, with automatic symmetry and prevention of invalid entries (distance from a city to itself is always zero). Users can input or edit distances and view a formatted distance table.
-
-Three types of vehicles—Van, Truck, and Lorry—are included, each with distinct capacities, rates per kilometer, average speeds, and fuel efficiency. Delivery requests include source, destination, weight, and vehicle type, with validation to ensure that weights do not exceed vehicle capacity and that source and destination are not identical.
-
-The system calculates delivery costs, time, and fuel usage based on real-world formulas:
-
-DeliveryCost = Distance × Rate × (1 + Weight / 10000)
-Time = Distance / Speed
-FuelUsed = Distance / Efficiency
-FuelCost = FuelUsed × Fuel Price
-TotalCost = DeliveryCost + FuelCost
-Profit = 25% of DeliveryCost
-CustomerCharge = TotalCost + Profit
-
-It maintains up to 50 delivery records and implements a least-cost route algorithm, generating all possible routes between cities (up to 4 cities per route) and selecting the route with minimum distance for cost calculations. The system also provides detailed performance reports, including total deliveries completed, total distance covered, average delivery time, total revenue and profit, and the longest and shortest routes completed.
-
-For enhanced functionality, file handling allows the system to save and load city lists, distance matrices, and delivery records using text files. Data is loaded automatically on startup and saved before exiting, ensuring continuity between sessions.
-
-This project demonstrates practical full-stack C programming skills, including the use of arrays, functions, loops, conditional statements, file handling, and algorithm design. It simulates realistic logistics and delivery operations, providing a hands-on learning experience for understanding transportation systems, cost optimization, and performance tracking.
-
-Technologies & Tools: C Language (Code::Blocks), Git & GitHub, Text Files for persistent data storage."
-        data-img="images/Project2.png"
-        data-link="https://github.com/Sathirasugeesvara/Logistic-Management-System-.git">
-        <img src="images/Project2.png" alt="Project 2">
-        <h3>Logistics Management System</h3>
-        <p>Developed a menu-driven Logistics Management System using C language...</p>
-        <a href="#" class="btn modal-btn">View Details</a>
+      <!-- Project 2 -->
+    <div class="project-card">
+      <img src="images/Project2.png" alt="Logistics Project">
+      <h3>Logistics Management System</h3>
+      <p>A C-based logistics system designed to simulate delivery operations with route optimization and cost analysis. Enables efficient management of cities, vehicles, and deliveries with persistent data storage.</p>
+      <div class="btn-group">
+      <a href="https://github.com/Sathirasugeesvara/Logistic-Management-System-.git" target="_blank" class="btn">View on GitHub</a>
       </div>
+    </div>
 
-
-      <div class="project-card" 
-        data-title="Sarasavi Library Management System"
-        data-desc="This project is a full-featured, web-based Library Management System developed using HTML, CSS, JavaScript, PHP, and MySQL. It is designed to manage all core library operations efficiently for small to medium-sized libraries, providing role-based access for Super Admin, Admin, and User roles. The system allows administrators to manage books, users, and borrowing requests while maintaining clear operational control and accountability.
-
-Key Features:
-
-Role-Based Access Control:
-Super Admin can manage Admin accounts, approve/reject Admin registration requests, and has full access to all users and books.
-Admin can approve/reject User registration requests, manage books (Add, Edit, Delete, View), and handle borrow requests.
-User can register, request books, and view their own borrowing history.
-Book Management:
-Admins and Super Admins can add, edit, delete, and view books in the system.
-Ensures all book records are organized and easily accessible.
-Borrowing Requests and History:
-Tracks all borrow requests and maintains user borrowing history.
-Approvals and rejections are logged by Admin or Super Admin, keeping the system secure and well-managed.
-User and Admin Registration:
-Users and Admins register through the system and await approval.
-Super Admin is the only role that can create new Admins.
-Technologies & Architecture:
-Frontend: HTML5, CSS3, JavaScript for UI and interactive elements.
-Backend: PHP 8.x for authentication, session management, and database operations.
-Database: MySQL / MariaDB to store all records of users, admins, books, and borrowing history.
-Server: XAMPP / Localhost for local deployment and testing.
-Future Improvements:
-Implement password hashing for enhanced security.
-Add search and filter functionality for books.
-Enhance UI using frameworks like Bootstrap or TailwindCSS.
-Integrate email notifications for approvals, rejections, and borrow requests.
-
-This project demonstrates practical full-stack web development skills, combining frontend design, backend logic, database management, and role-based access control in a single integrated application. It is ideal for learning and real-world library operations management."
-        data-img="images/Project3.png"
-        data-link="https://github.com/Kusalranasinghe/Sarasavi-Library.git">
-        <img src="images/Project3.png" alt="Sarasavi Library Project">
-        <h3>Sarasavi Library Management System</h3>
-        <p>Collaboratively built full-stack Sarasavi Library Management System using HTML, CSS, JavaScript, PHP, and MySQL...</p>
-        <a href="#" class="btn modal-btn">View Details</a>
+    <!-- Project 3 -->
+    <div class="project-card">
+      <img src="images/Project3.png" alt="Library Project">
+      <h3>Sarasavi Library System</h3>
+      <p>A web-based library management system built using HTML, CSS, PHP, MySQL, and JavaScript. Enables role-based access, book management, and borrowing workflows with secure data handling.</p>
+      <div class="btn-group">
+      <a href="https://github.com/Kusalranasinghe/Sarasavi-Library.git" target="_blank" class="btn">View on GitHub</a>
       </div>
+    </div>
 
-      </div>
-    </section>
+  </div>
+</section>
 
 
 
@@ -341,11 +262,13 @@ This project demonstrates practical full-stack web development skills, combining
 
 
 
+
+
 <!-- Contact Section -->
     <section id="contact" class="contact">
       <h2 class="heading">Contact <span>Me</span></h2>
       <hr><br><br>
-      <form action="#">
+      <form id="contact-form">
         <div class="input-group">
           <div class="input-box">
             <input type="text" name="name" placeholder="Your Name" required>
@@ -354,12 +277,16 @@ This project demonstrates practical full-stack web development skills, combining
           <div class="input-box">
             <input type="text" name="subject" placeholder="Subject" required>
           </div>
-          <textarea name="message" id="message" placeholder="Your Message" cols="30" rows="10"></textarea>
+          <textarea name="message" required placeholder="Your Message"></textarea>
           <input type="submit" value="Send Message" class="btn">
         </div>
           
       </form>
     </section>
+
+
+
+
 
 
 
@@ -402,6 +329,35 @@ This project demonstrates practical full-stack web development skills, combining
     </footer>
 
     <script src="script.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    emailjs.init("5yGFubHnnorTtOUmY");
+
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        emailjs.send("service_o6666hh", "template_c1a688j", {
+            name: document.querySelector("input[name='name']").value,
+            email: document.querySelector("input[name='email']").value,
+            subject: document.querySelector("input[name='subject']").value,
+            message: document.querySelector("textarea[name='message']").value
+        })
+        .then(function() {
+            alert("Message sent successfully!");
+            document.getElementById("contact-form").reset();
+        })
+        .catch(function(error) {
+            console.log("EmailJS Error:", error);
+            alert("Failed to send message!");
+        });
+
+    });
+
+});
+</script>
+
 </body>
 </html>
