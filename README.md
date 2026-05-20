@@ -8,7 +8,7 @@ This website presents my work, experience, and contact details in a clean and re
 
 ## 🚀 Live Demo
 
-👉 https://sathirasugeesvara.github.io/my_portfolio  
+👉 https://sathirasugeesvara.github.io  
 
 ---
 
@@ -22,23 +22,12 @@ Hello! I’m **Sathira Sugeesvara** — a Computer Science & Mathematics student
 
 This site showcases some of the technical skills I work with, including:
 
-- Python programming
-- Fullstack web development (HTML, CSS, JavaScript, PHP, SQL)
+- Python, Java, C programming
+- Fullstack web development (HTML, CSS, JavaScript, PHP, SQL, MERN)
 - Backend & database handling
 - Design fundamentals
 
 You can find more details in the Skills section of the site.
-
----
-
-## 🗺️ What’s Inside This Repository
-
-| File | Purpose |
-|------|---------|
-| `index.html` | The main homepage of my portfolio |
-| `style.css` | All styling and responsiveness |
-| `script.js` | JavaScript for interactive elements |
-| `images/` | Assets used in the site, like photos and icons |
 
 ---
 
@@ -60,17 +49,6 @@ This portfolio was built using:
 ✔ Skills description  
 ✔ Contact form layout  
 ✔ Timeline of key milestones
-
----
-
-## 📌 How To View Locally
-
-1. **Clone repository**
-   ```bash
-   git clone https://github.com/Sathirasugeesvara/my_portfolio.git
-2. **Open in browser**
-Navigate to the folder on your computer
-Open index.html in your web browser
 
 ---
 

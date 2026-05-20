@@ -3,10 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+
+    // SEO Meta Tags
+    <meta name="keywords" content="Sathira Sugeesvara, Full-Stack Developer, MERN, C, Python, Java, PHP, MySQL, Mathematics">
+    <meta property="og:title" content="Sathira Sugeesvara">
+    <meta property="og:description" content="Full-Stack Developer">
+    <meta property="og:image" content="https://sathirasugeesvara.github.io/images/Photo1.jpg">
+
+    <title>Sathira Sugeesvara | Full-Stack Developer</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    // Structured Data for SEO
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sathira Sugeesvara",
+  "url": "https://sathirasugeesvara.github.io",
+  "image": "https://sathirasugeesvara.github.io/images/Photo1.jpg",
+  "sameAs": [
+    "https://www.linkedin.com/in/sathirasugeesvara",
+    "https://github.com/Sathirasugeesvara",
+    "mailto:sathirasugeesvara@gmail.com",
+    "https://www.facebook.com/sathira.sugeesvara",
+    "https://www.instagram.com/sathirasugeesvara"
+  ],
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of Sri Jayewardenepura"
+  },
+  "knowsAbout": [
+    "MERN",
+    "C Programming",
+    "Python",
+    "Java",
+    "PHP",
+    "MySQL",
+    "Mathematics"
+    ]
+}
+  </script>
+
 </head>
 
 
@@ -23,7 +63,7 @@
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#certificates">Certificates</a>
-            <a href="#footer">Contact</a>
+            <a href="#contact">Contact</a>
         </nav>
         <a href="sathira_cv.pdf" download class="gradient-btn">Download CV</a>
     </header>
@@ -56,7 +96,7 @@
     <div class="home-img">
       <img src="images/Photo1.jpg" alt="My Photo" class="profile-img">
         <h2 class="typing">Sathira Sugeesvara</h2>
-        <h2 class="h2typing">Designer | Coder | Editor</h2>
+        <h2 class="h2typing">Developer | Coder | Editor</h2>
     </div>
      
     </section>
@@ -73,8 +113,8 @@
     <div class="timeline">
 
       <div class="timeline-item">
-        <h2>2025 - Joined University <span class="badge edu-badge">EDU</span></h2>
-        <p><b>Computer Science</b> & <b>Mathematics</b> at <b>University of Sri Jayewardhenepura</b>.</p>
+        <h2>2025 - Joined the University <span class="badge edu-badge">EDU</span></h2>
+        <p><b>Computer Science</b> & <b>Mathematics</b> at <b>University of Sri Jayewardenepura</b>.</p>
       </div>
 
       <div class="timeline-item">
@@ -169,8 +209,8 @@
       <p>A modern clothing e-commerce web app built with React, using Google Sheets as a real-time data source via APIs. Enables dynamic product and stock updates instantly without a traditional backend.</p>
       
       <div class="btn-group">
-      <a href="https://sathirasugeesvara.github.io/xaro-clothing/" target="_blank" class="btn">Live Demo</a>
-      <a href="https://github.com/Sathirasugeesvara/xaro-clothing.git" target="_blank" class="btn">GitHub</a>
+      <a href="https://sathirasugeesvara.github.io/xaro-clothing/" target="_blank" rel="noopener noreferrer" class="btn">Live Demo</a>
+      <a href="https://github.com/Sathirasugeesvara/xaro-clothing.git" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
       </div>
   
     </div>
@@ -182,7 +222,7 @@
       <h3>Logistics Management System</h3>
       <p>A C-based logistics system designed to simulate delivery operations with route optimization and cost analysis. Enables efficient management of cities, vehicles, and deliveries with persistent data storage.</p>
       <div class="btn-group">
-      <a href="https://github.com/Sathirasugeesvara/Logistic-Management-System.git" target="_blank" class="btn">View on GitHub</a>
+      <a href="https://github.com/Sathirasugeesvara/Logistic-Management-System.git" target="_blank" rel="noopener noreferrer" class="btn">View on GitHub</a>
       </div>
     </div>
 
@@ -192,7 +232,7 @@
       <h3>LankaGo AI</h3>
       <p>An AI-powered Sri Lanka travel planning platform that generates smart itineraries based on user preferences such as budget, destinations, and trip duration. Features include AI travel assistance, weather alerts, budget optimization, Google Maps integration, saved trips, and a fully responsive modern UI.</p>
       <div class="btn-group">
-        <a href="https://github.com/Sathirasugeesvara/LankaGoAI.git" target="_blank" class="btn">View on GitHub</a>
+        <a href="https://github.com/Sathirasugeesvara/LankaGoAI.git" target="_blank" rel="noopener noreferrer" class="btn">View on GitHub</a>
       </div>
     </div>
 
@@ -302,22 +342,22 @@
 <!-- Footer -->
     <footer id="footer" class="footer">
       <div class="social-icons">
-        <a href="https://github.com/Sathirasugeesvara">
+        <a href="https://github.com/Sathirasugeesvara" target="_blank" rel="noopener noreferrer">
           <i class='bx bxl-github'></i>
         </a>
-        <a href="https://www.linkedin.com/in/sathirasugeesvara">
+        <a href="https://www.linkedin.com/in/sathirasugeesvara" target="_blank" rel="noopener noreferrer">
           <i class='bx bxl-linkedin'></i>
         </a>
-        <a href="https://www.facebook.com/sathira.sugeesvara">
+        <a href="https://www.facebook.com/sathira.sugeesvara" target="_blank" rel="noopener noreferrer">
           <i class='bx bxl-facebook'></i>
         </a>
-        <a href="https://wa.me/qr/KVZV5FS5UK4OC1">
+        <a href="https://wa.me/qr/KVZV5FS5UK4OC1" target="_blank" rel="noopener noreferrer">
           <i class='bx bxl-whatsapp'></i>
         </a>
-        <a href="mailto:sathirasugeesvara@gmail.com">
+        <a href="mailto:sathirasugeesvara@gmail.com" target="_blank" rel="noopener noreferrer">
           <i class='bx bxl-gmail'></i>
         </a>
-        <a href="https://www.instagram.com/sathirasugeesvara">
+        <a href="https://www.instagram.com/sathirasugeesvara" target="_blank" rel="noopener noreferrer">
           <i class='bx bxl-instagram'></i>
         </a>
 
